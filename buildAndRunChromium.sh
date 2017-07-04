@@ -7,5 +7,4 @@ case "$COMPONENT" in
 chrome) EXECUTABLE='Chromium.app/Contents/MacOS/Chromium';;
 esac
 
-ninja -C out/$FOLDER $COMPONENT
-out/$FOLDER/$EXECUTABLE
+ninja -C out/$FOLDER $COMPONENT && out/$FOLDER/$EXECUTABLE
